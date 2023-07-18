@@ -162,7 +162,7 @@ $CFG->dboptions = array(
 // If you need both intranet and Internet access please read
 // http://docs.moodle.org/en/masquerading
 
-$CFG->wwwroot   = 'https://cf88eab3db1d.ngrok.io';
+$CFG->wwwroot   = $_ENV['MOODLE_WWWROOT'];
 
 
 //=========================================================================

@@ -12,6 +12,7 @@ services:
       - db
     environment:
       DATABASE_URL: postgres://postgres@db
+      MOODLE_WWWROOT: ${MOODLE_WWWROOT}
   db:
     image: postgres:13-alpine
     volumes:
